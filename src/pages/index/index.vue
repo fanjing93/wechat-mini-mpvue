@@ -22,7 +22,7 @@
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
 
-    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
+    <a href="/pages/counter/main" class="counter">去往Vuex示例</a>
 
     <div class="all">
         <div class="left">
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import card from '@/components/card'
+import productGrid1 from '@/components/product_grid_1'
 
 export default {
   data () {
@@ -48,7 +48,7 @@ export default {
   },
 
   components: {
-    card
+    productGrid1
   },
 
   methods: {
