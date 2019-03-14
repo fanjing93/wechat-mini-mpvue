@@ -30,8 +30,8 @@
     },{
       "text": "我的",
       "pagePath": "pages/center/main",
-      "iconPath": "static/tabs/index.png",
-      "selectedIconPath": "static/tabs/index-active.png"
+      "iconPath": "static/tabs/center.png",
+      "selectedIconPath": "static/tabs/center-active.png"
     }],
     "position": "bottom"
   }
