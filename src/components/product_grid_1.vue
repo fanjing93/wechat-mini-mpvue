@@ -13,9 +13,9 @@
 </template>
 
 <script>
-  import $ajax from '../http/index'
-  import api from '../http/api'
-  import { formatPrice } from '../utils/index'
+  import $ajax from '@/http/index'
+  import api from '@/http/api'
+  import { formatPrice } from '@/utils/index'
 
   export default {
     name: 'product_grid_1',
