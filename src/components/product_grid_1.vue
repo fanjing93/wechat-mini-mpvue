@@ -5,7 +5,7 @@
         <view :data-goods_id="item.goods_id">
           <image mode="aspectFit" class="wm-goods-list-img" :src="item.images" alt="goods_images"></image>
           <view class="line-height-14 font-size-12 text-center">{{ item['goods_name'] }}</view>
-          <view class="wm-goods-list-price line-height-14 font-size-12 text-center">￥{{ item['min_price'] }}</view>
+          <view class="wm-goods-list-price line-height-14 font-size-12 text-center">￥{{ item['price'] }}</view>
         </view>
       </van-col>
     </van-row>
@@ -15,6 +15,7 @@
 <script>
   import $ajax from '../http/index'
   import api from '../http/api'
+  import { formatPrice } from '../utils/index'
 
   export default {
     name: 'product_grid_1',
@@ -37,7 +38,7 @@
         if (res.code === 0) {
           let list = res.data.list
           list.map((item) => {
-            item['min_price'] === item['max_price'] ? (item.price = item['min_price']) : (item.price = `${item['min_price']}~${item['max_price']}`)
+            item['min_price'] === item['max_price'] ? (item.price = formatPrice(item['min_price'])) : (item.price = `${formatPrice(item['min_price'])}~${formatPrice(item['max_price'])}`)
           })
           this.list = list.length ? list : []
           this.total_num = res.data.total_num
