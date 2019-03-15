@@ -1,7 +1,7 @@
 <template>
   <ul class="wm-product-list-1">
     <li class="wm-product-list-1-item">
-
+        333
     </li>
   </ul>
 </template>
@@ -15,6 +15,7 @@
 <style scoped lang="less">
   .wm-product-list-1 {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 
