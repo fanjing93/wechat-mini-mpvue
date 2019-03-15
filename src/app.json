@@ -1,9 +1,12 @@
 {
+  "usingComponents": {
+    "van-row": "static/vant/row/index",
+    "van-col": "static/vant/col/index"
+  },
   "pages": [
     "pages/index/main",
     "pages/center/main",
-    "pages/cart/main",
-    "pages/counter/main"
+    "pages/cart/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

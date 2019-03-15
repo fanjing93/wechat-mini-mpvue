@@ -9,5 +9,3 @@ Vue.prototype.$store = store
 
 const app = new Vue(App)
 app.$mount()
-
-Vue.prototype.globalData = getApp().globalData

@@ -18,6 +18,18 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+// pop_zero去除后面的0
+const formatPrice = (price, popZero = false) => {
+  var result = price > 0 ? price / 100 : 0
+  return popZero ? parseFloat(formatFloat(result)) : formatFloat(result)
+}
+
+const formatFloat = (price, num = 2) => {
+  return Math.abs(price).toFixed(num)
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  formatPrice,
+  formatFloat
 }

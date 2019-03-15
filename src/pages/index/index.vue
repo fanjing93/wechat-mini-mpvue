@@ -1,7 +1,7 @@
 <template>
-  <div class="wm-container">
+  <page class="wm-container">
     <productGrid1></productGrid1>
-  </div>
+  </page>
 </template>
 
 <script>

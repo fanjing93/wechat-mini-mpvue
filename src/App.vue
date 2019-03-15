@@ -35,7 +35,6 @@
     },
     methods: {
       ...mapMutations({
-        setOpenId: types.SET_OPEN_ID,
         setBuyerId: types.SET_BUYER_ID,
         setChannel: types.SET_CHANNEL,
         setNavigatorBg: types.SET_NAVIGATOR_BG,
@@ -72,9 +71,6 @@
             },
             fail: res => {
               reject(res)
-            },
-            complete: function (res) {
-
             }
           })
         })
@@ -137,7 +133,6 @@
       }
     },
     onLaunch () {
-      console.log(this)
       this.login_promise = this.do_login()
       this.get_theme_promise = this.getTheme()
     },
