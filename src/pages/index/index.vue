@@ -1,30 +1,15 @@
 <template>
-  <page class="wm-container">
-    <productGrid1></productGrid1>
-  </page>
+  <div class="wm-container">
+    <productGrid></productGrid>
+  </div>
 </template>
 
 <script>
-  import productGrid1 from '@/components/product_grid_1'
+  import productGrid from '../../components/product_grid_1'
 
   export default {
-    data () {
-      return {
-      }
-    },
-
     components: {
-      productGrid1
-    },
-
-    methods: {},
-
-    created () {
-
-    },
-
-    mounted () {
-
+      productGrid
     }
   }
 </script>

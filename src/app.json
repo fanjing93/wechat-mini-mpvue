@@ -6,7 +6,8 @@
   "pages": [
     "pages/index/main",
     "pages/center/main",
-    "pages/cart/main"
+    "pages/cart/main",
+    "pages/product/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
